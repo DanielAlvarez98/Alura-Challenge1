@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url(imagenescha/horizon.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+   margin: 20px;
+   width: 10%;
+
+}
+#resultado1{
+    float: left;
+    width: 50%;
+    text-align: center;
+    margin: 3em 0 0 5em;
+}
+#texto{
+    width: 70%;
+    height: 300px;
+    margin: auto;
+    margin-left: 20%;
+    display: block;
+    background: transparent;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 150%;
+    color: white;
+    border: 2em;
+    
+}
+#texto::placeholder{
+    color: black
+}
+.vector{
+    margin-top: 1em;
+    position: initial;
+    width: 20px;
+}
+.letras{
+    text-align: center;
+    left: 16%;
+    top: 60%;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 150%;
+    color: black;
+    font-weight: bold;  
+}
+ 
+.contenedorBotones{
+    text-align: center;
+    margin-top: 2em;
+}
+.botones{
+    padding: 25px;
+    background: transparent;
+    border-radius: 24px;
+    margin: 0 24px;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+
+}
+.resultado2{
+    float: left;
+    width: 30%;
+    height: 60%;
+    left: 60%;
+    background:transparent;
+    text-align: center;
+    margin: 3em 0 0 0;
+    
+}
+.eloy{
+    margin: 0 auto;
+    top: 50px;
+    width: 300px;
+}
+.mensajeencontrado{
+    position: relative;
+    width: 70%;
+    height: auto;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: auto;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 150%;
+    text-align: center;
+}
+
+.respuesta{
+    position: relative;
+    width: 70%;
+    height: auto;
+    align-self: stretch;
+    flex-grow: 0;
+    margin:auto;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+}
+.copiar{
+    margin: 1em auto;
+    padding: 25px;
+    background: transparent;
+    border-radius: 24px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+    color: black;
+    cursor: pointer
+}
+.text-box.disabled{
+    display: none;
+}
+.text-box{
+    width: 100%;
+    height: 80%;
+}
+.alert{
+    background-color: none;
+    position: relative;
+}
+#resul{
+    background: transparent;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    height: 400px;
+    border: none;
+}
+.copiar:hover,.botones:hover{
+    transform: scale(1.1);
+}
+.login,.redes{
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight:bold ;
+}
+.redes{
+    margin-top: auto 1em;
+}
+@media (max-width:769px){
+    
+    #resultado1{
+    width: 100%;
+    margin: 0px;
+    }
+    .resultado2{
+    width: 100%;
+    flex-direction: column;
+    margin-top: 2em;
+    }
+    #texto {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    margin:0px;
+    font-size: 30px;
+    }
+    .letras,.mensajeencontrado,.respuesta{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        flex-direction: column;
+        margin-top: 1em;
+        font-size: 20px;
+    }
+    .contenedorBotones{
+        margin: 0px;
+        display: flex;
+      }
+    .logo{
+          width: 15%;
+     }
+     .botones{
+         font-size: 100%;
+         margin: auto;
+     }
+}
